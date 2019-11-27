@@ -7,7 +7,7 @@ Also this page was adapted for different width values: 380px, 565px, 767px, 991p
 
 For more information see following links:
 
-1. Course on creating a landing page for beginners (author Дмитрий Валак, August 2019, for russian speakers):
+1. Course on creating a landing page (author Дмитрий Валак, August 2019, for russian speakers):
 https://www.youtube.com/watch?v=Cyr0fFYrwHU&list=PLoq3Accf02PV3dIFVeYnqp3FSfyR2u0gU
 
 2. Landing page layout (psd and xd versions):
