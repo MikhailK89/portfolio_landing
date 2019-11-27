@@ -24,6 +24,7 @@ https://www.flaticon.com/
 
 6. Free text editor "Brackets" that I used:
 http://brackets.io/
+
 Primarily install extensions for it: Less AutoCompile (for Less files compilation) and Emmet.
 
 
