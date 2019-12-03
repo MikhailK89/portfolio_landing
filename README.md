@@ -7,7 +7,23 @@ Also this page was adapted for different width values: 380px, 565px, 767px, 991p
 
 # Slick slider
 
-Slick slider has some features when using flex.
+Slick slider has some features when using flex. In this project the slider is used inside the modal window.
+
+```css
+<div class="modal">
+  <div class="modal__dialog>
+    
+    <div class="modal-work">
+      <div class="modal-work__preview">
+        
+        <div data-slider="slick"></div>
+        
+      </div>
+    </div>
+    
+  </div>
+</div>
+```
 
 
 # Links
