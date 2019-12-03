@@ -2,6 +2,7 @@
 
 .timeline {
     display: flex;
+    
     margin: 4.2rem auto;
     width: 100%;
     max-width: 768px;
@@ -20,6 +21,14 @@
         left: 50%;
         z-index: 1;
     }
+    
+    @media @mobile-sm {
+        flex-direction: column;
+        
+        &:before {
+            display: none;
+        }
+    }
 }
 
 .timeline__col {
@@ -33,6 +42,20 @@
     &--right {
         text-align: left;
         padding-left: 3.2rem;
+    }
+    
+    @media @mobile-sm {
+        width: 100%;
+        padding: 0 3.2rem;
+        
+        &--left {
+            text-align: left;
+            margin-bottom: 3rem;
+        }
+    }
+    
+    @media @mobile-extra-sm {
+        padding: 0 1rem;
     }
 }
 
@@ -83,4 +106,87 @@
     font-weight: 300;
     line-height: 1.5;
     color: @gray;
+    
+    @media @mobile-sm {
+        text-align: justify;
+    }
+}
+
+.timeline__btn-header-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.timeline__btn-header {
+    display: inline-block;
+    
+    padding: 1.05em 1.7em;
+    min-width: 145px;
+    
+    border: 1px solid @black;
+    border-radius: 1.8em;
+    background: none;
+    cursor: pointer;
+    
+    font-family: inherit;
+    font-size: .8rem;
+    line-height: 1.1;
+    color: @black;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    
+    transition: background-color .2s linear, color .2s linear, box-shadow .2s linear, border-color .2s linear;
+    
+    &:focus {
+        outline: none;
+    }
+    
+    &:hover {
+        background-color: @black;
+        box-shadow: 2px 2px 10px fade(@black, 24%);
+        color: @white;
+        border-color: @black;
+    }
+    
+    &--right {
+        margin-left: 1rem;
+    }
+}
+
+.timeline__btn-footer-wrapper {
+    text-align: center;
+}
+
+.timeline__btn-footer {
+    display: inline-block;
+    
+    padding: 1.05em 1.7em;
+    min-width: 170px;
+    
+    border: 1px solid @black;
+    border-radius: 1.8em;
+    background: none;
+    cursor: pointer;
+    
+    font-family: inherit;
+    font-size: 1.06rem;
+    line-height: 1.1;
+    color: @black;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    
+    transition: background-color .2s linear, color .2s linear, box-shadow .2s linear, border-color .2s linear;
+    
+    &:focus {
+        outline: none;
+    }
+    
+    &:hover {
+        background-color: @black;
+        box-shadow: 2px 2px 10px fade(@black, 24%);
+        color: @white;
+        border-color: @black;
+    }
 }

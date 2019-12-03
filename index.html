@@ -11,7 +11,12 @@
     
     <title>Portfolio</title>
     
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script
+        src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+        crossorigin="anonymous">
+    </script>
+
 </head>
 
 <body>
@@ -79,8 +84,13 @@
                         <img src="images/twitter.jpg" alt="">
                     </a>
                 </div>
-                <a class="btn" href="#" data-modal="#modal_hire_me">Заказать</a>
-                <button class="btn" type="button" data-modal="#modal_resume">Резюме</button>
+                
+                <div class="intro__btn-wrapper">
+                    <div>
+                        <a class="intro__btn" href="#" data-modal="#modal_hire_me">Заказать</a>
+                        <button class="intro__btn intro__btn--right" type="button" data-modal="#modal_resume">Резюме</button>
+                    </div>
+                </div>
             </div>
             
             <div class="intro__photo">
@@ -189,8 +199,8 @@
             </div><!-- /.portfolio__col -->
         </div><!-- /.portfolio -->
         
-        <div class="btn-center">
-            <a class="btn btn--sm" href="#">Ещё больше</a>
+        <div class="works__btn-wrapper">
+            <a class="works__btn" href="#">Ещё больше</a>
         </div>
     
     </div><!-- /.container -->
@@ -215,8 +225,12 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat est consequat eu.</p>
                 </div>
                 
-                <a class="btn" href="#" data-modal="#modal_hire_me">Заказать</a>
-                <button class="btn" type="button" data-modal="#modal_resume">Резюме</button>
+                <div class="about__btn-wrapper">
+                    <div>
+                        <a class="about__btn" href="#" data-modal="#modal_hire_me">Заказать</a>
+                        <button class="about__btn about__btn--right" type="button" data-modal="#modal_resume">Резюме</button>
+                    </div>
+                </div>
             
             </div><!-- /.about__content -->
         </div><!-- /.about__inner -->
@@ -282,7 +296,9 @@
                         </div>
                     </div>
                     
-                    <a class="btn btn--sm" href="#">Подробнее</a>
+                    <div class="articles__btn-wrapper">
+                        <a class="articles__btn" href="#">Подробнее</a>
+                    </div>
                 </div>
             </div>
             
@@ -306,7 +322,9 @@
                         </div>
                     </div>
                     
-                    <a class="btn btn--sm" href="#">Подробнее</a>
+                    <div class="articles__btn-wrapper">
+                        <a class="articles__btn" href="#">Подробнее</a>
+                    </div>
                 </div>
             </div>
             
@@ -330,7 +348,9 @@
                         </div>
                     </div>
                     
-                    <a class="btn btn--sm" href="#">Подробнее</a>
+                    <div class="articles__btn-wrapper">
+                        <a class="articles__btn" href="#">Подробнее</a>
+                    </div>
                 </div>
             </div>
             
@@ -391,7 +411,7 @@
 
 <!-- Modal Work 1 -->
 <div class="modal" id="modal_project_1">
-    <div class="modal__dialog">
+    <div class="modal__dialog modal__dialog--work">
         
         <button class="modal__close" type="button" data-close="">
             <img src="images/modal-close.svg" alt="">
@@ -402,11 +422,19 @@
             <div class="modal-work__preview">
                 <div data-slider="slick">
                     <div>
-                        <img class="modal-work__photo" src="https://placehold.it/790x780" alt="">
+                        <img class="modal-work__photo" src="images/gags/gag-pink.png" alt="">
                     </div>
                     
                     <div>
-                        <img class="modal-work__photo" src="https://placehold.it/790x780/333" alt="">
+                        <img class="modal-work__photo" src="images/gags/gag-green.png" alt="">
+                    </div>
+                    
+                    <div>
+                        <img class="modal-work__photo" src="images/gags/gag-blue.png" alt="">
+                    </div>
+                    
+                    <div>
+                        <img class="modal-work__photo" src="images/gags/gag-gray.png" alt="">
                     </div>
                 </div>
             </div>
@@ -452,18 +480,20 @@
 
 <!-- Modal Resume -->
 <div class="modal" id="modal_resume">
-    <div class="modal__dialog">
+    <div class="modal__dialog modal__dialog--resume">
         
         <button class="modal__close" type="button" data-close="">
             <img src="images/modal-close.svg" alt="">
         </button>
         
         <div class="modal__content">
-            <h3 class="modal__title text-center">resume</h3>
+            <h3 class="modal__title modal__title--resume text-center">resume</h3>
             
-            <div class="text-center">
-                <a class="btn btn--thin" href="#">download pdf</a>
-                <a class="btn btn--thin" href="#">print</a>
+            <div class="timeline__btn-header-wrapper">
+                <div>
+                    <a class="timeline__btn-header" href="#">download pdf</a>
+                    <a class="timeline__btn-header timeline__btn-header--right" href="#">print</a>
+                </div>
             </div>
             
             <div class="timeline">
@@ -603,8 +633,8 @@
                 </div><!-- /.timeline__col--right -->
             </div><!-- /.timeline -->
             
-            <div class="text-center">
-                <a class="btn" href="#" data-modal="#modal_hire_me">hire me</a>
+            <div class="timeline__btn-footer-wrapper">
+                <a class="timeline__btn-footer" href="#" data-modal="#modal_hire_me">hire me</a>
             </div>
             
         </div><!-- /.modal__content -->
@@ -614,7 +644,7 @@
 
 <!-- Modal Hire Me -->
 <div class="modal" id="modal_hire_me">
-    <div class="modal__dialog modal__dialog--sm">
+    <div class="modal__dialog modal__dialog--hire">
         
         <button class="modal__close" type="button" data-close="">
             <img src="images/modal-close.svg" alt="">
@@ -623,8 +653,8 @@
         <div class="contact">
         
             <div class="contact__left">
-                <h3 class="modal__title mb-0">let's talk</h3>
-                <h4 class="modal__subtitle">call me or send me a request</h4>
+                <h3 class="modal__title modal__title--hire mb-0">let's talk</h3>
+                <h4 class="modal__subtitle modal__subtitle--hire">call me or send me a request</h4>
                 
                 <ul class="contact__info">
                     <li class="contact__info-item">
@@ -649,15 +679,19 @@
                         <textarea class="form__textarea" id="input-text" name="input-text" placeholder="Type your request..."></textarea>
                     </div>
                     
-                    <div class="text-right">
-                        <button class="btn" type="submit">send</button>
+                    <div class="form__btn-wrapper">
+                        <div>
+                            <button class="form__btn" type="submit">send</button>
+                        </div>
                     </div>
                 </form>
-            
+                
             </div><!-- /.contact__left -->
             
-            <div class="contact__right"></div>
-
+            <div class="contact__right">
+                <img src="https://placehold.it/480x700" alt="">
+            </div>
+        
         </div><!-- /.contact -->
         
     </div><!-- /.modal__dialog -->

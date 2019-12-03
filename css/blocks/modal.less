@@ -25,16 +25,30 @@
     margin: auto;
     
     width: 100%;
-    max-width: 1200px;
     
     background-color: #fff;
     
     transform: scale(0);
-    
     transition: transform .2s linear;
     
-    &--sm {
+    &--work {
+        max-width: 1200px;
+        
+        @media @tablet {
+            max-width: 790px;
+        }
+    }
+    
+    &--hire {
         max-width: 900px;
+        
+        @media @tablet {
+            max-width: 480px;
+        }
+    }
+    
+    &--resume {
+        max-width: 1200px;
     }
 }
 
@@ -71,6 +85,18 @@
     font-weight: 700;
     color: @black;
     text-transform: uppercase;
+    
+    &--resume {
+        @media @mobile-extra-sm {
+            font-size: 2.5rem;
+        }
+    }
+    
+    &--hire {
+        @media @mobile-extra-sm {
+            font-size: 2rem;
+        }
+    }
 }
 
 .modal__subtitle {
@@ -78,4 +104,10 @@
     font-weight: 400;
     color: @black;
     text-transform: uppercase;
+    
+    &--hire {
+        @media @mobile-extra-sm {
+            font-size: .8rem;
+        }
+    }
 }

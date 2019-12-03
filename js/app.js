@@ -92,14 +92,25 @@ $(function() {
 /* Slider: https://kenwheeler.github.io/slick/
 ================================== */
     
-    worksSlider.slick({
+    const slickOptions = {
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         fade: true,
         arrows: false,
         dots: true
+    };
+    
+    worksSlider.slick(slickOptions);
+    
+    /*
+    
+    $(window).resize(function() {
+        worksSlider.slick('unslick');
+        worksSlider.slick(slickOptions);
     });
+    
+    */
     
     $('.slickPrev').on("click", function(event) {
         event.preventDefault();
