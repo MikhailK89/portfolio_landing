@@ -5,6 +5,8 @@ This page (with modal windows) was created using Less preprocessor, JQuery for e
 Also this page was adapted for different width values: 380px, 565px, 767px, 991px and 1199px.
 
 
+# Links
+
 For more information see following links:
 
 1. Course on creating a landing page (author Дмитрий Валак, August 2019, for russian speakers):
