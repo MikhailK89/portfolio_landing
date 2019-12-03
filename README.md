@@ -5,9 +5,9 @@ This page (with modal windows) was created using Less preprocessor, JQuery for e
 Also this page was adapted for different width values: 380px, 565px, 767px, 991px and 1199px.
 
 
-# Solving Slick slider problem
+# Solving Slick slider adaptive (resize) problem
 
-Slick slider has some features when using flex. If it is inside any block that has the property `display: flex`, then it begins to expand exponentially in width.
+Slick slider has some features when using flex. If it is inside any block that has the property `display: flex`, then it begins to expand exponentially in width. And when you try to change the screen size the slider does not adapt to it.
 
 In this project the slider is used inside the modal window.
 ```css
@@ -25,7 +25,9 @@ In this project the slider is used inside the modal window.
   </div>
 </div>
 ```
-Class `.modal` is used to center the block `.modal__dialog` on the screen.
+`.modal` has the property `display: flex`. This allows to center the block `.modal__dialog` on the screen.
+
+To solve an adaptive problem the outer block should have a width (relative or fixed). In this example the block `.modal` has a width equal to `width: 100%`.
 
 
 # Links
