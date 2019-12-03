@@ -38,6 +38,8 @@ max-width: 100%;
 height: auto;
 ```
 
+__Importantly:__ only the first two blocks solve the problem (with the property `display: flex` and the next block). The first block should be sized (relative or fixed). The next block should have a relative width (as an option `width: 100%`). In this example the slider has a deeper nesting. So its size does not solve the problem.
+
 
 # Links
 
