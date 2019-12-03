@@ -10,7 +10,7 @@ Also this page was adapted for different width values: 380px, 565px, 767px, 991p
 Slick slider has some features when using flex. If it is inside any block that has the property `display: flex`, then it begins to expand exponentially in width. And when you try to change the screen size the slider does not adapt to it.
 
 In this project the slider is used inside the modal window.
-```css
+```html
 <div class="modal">
   <div class="modal__dialog>
     
@@ -30,6 +30,13 @@ In this project the slider is used inside the modal window.
 To solve an adaptive problem the outer block should have a width (relative or fixed). In this example the block `.modal` has a width equal to `width: 100%`.
 
 The next block (`.modal__dialog`) should have a width equal to `width: 100%` __strictly__. You may limit this block using the additional property `max-width`.
+
+Images inside the slider should be adaptive also:
+```css
+display: block;
+max-width: 100%;
+height: auto;
+```
 
 
 # Links
