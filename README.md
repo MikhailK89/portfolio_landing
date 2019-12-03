@@ -5,6 +5,11 @@ This page (with modal windows) was created using Less preprocessor, JQuery for e
 Also this page was adapted for different width values: 380px, 565px, 767px, 991px and 1199px.
 
 
+# Slick slider
+
+Slick slider has some features when using flex.
+
+
 # Links
 
 For more information see following links:
