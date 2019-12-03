@@ -29,7 +29,7 @@ In this project the slider is used inside the modal window.
 
 To solve an adaptive problem the outer block should have a width (relative or fixed). In this example the block `.modal` has a width equal to `width: 100%`.
 
-The next block should have a width equal to `width: 100%` __strictly__.
+The next block (`.modal__dialog`) should have a width equal to `width: 100%` __strictly__. You may limit this block using the additional property `max-width`.
 
 
 # Links
