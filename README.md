@@ -5,10 +5,11 @@ This page (with modal windows) was created using Less preprocessor, JQuery for e
 Also this page was adapted for different width values: 380px, 565px, 767px, 991px and 1199px.
 
 
-# Slick slider
+# Solving Slick slider problem
 
-Slick slider has some features when using flex. In this project the slider is used inside the modal window.
+Slick slider has some features when using flex. If it is inside any block that has the property `display: flex`, then it begins to expand exponentially in width.
 
+In this project the slider is used inside the modal window.
 ```css
 <div class="modal">
   <div class="modal__dialog>
@@ -24,6 +25,7 @@ Slick slider has some features when using flex. In this project the slider is us
   </div>
 </div>
 ```
+Class `.modal` is used to center the block `.modal__dialog` on the screen.
 
 
 # Links
